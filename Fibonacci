@@ -1,0 +1,12 @@
+numero = int(input(f"Informe um numero"))
+
+fibonacci = [0, 1]
+for i in range(2, 60):
+    n = fibonacci[i-1] + fibonacci[i-2]
+    fibonacci.append(n)
+
+if numero in fibonacci:
+    print(f"O numero {numero}, está na seguencia de fibonacci")
+else:
+    print("O numero não está na seguencia de fibonacci")
+
